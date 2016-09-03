@@ -66,10 +66,15 @@ compile 'com.google.code.gson:gson:2.2.4'
 ```
 
 方法及参数说明：
+
 ***-url（）：***设置请求的接口地址，参数类型为String。(**必填**)
+
 ***-setJavaBean（）：***设置解析之后的JavaBean对象，记得加.class。（**必填**）
+
 ***-onExecute（）：***设置开始请求（get）接口，请求结果在回调方法中，参数为CommCallback，可加泛型。（**必填**）
+
 ***-setReadTimeout（）：***设置读取超时时间（默认30s），参数为整型，单位：毫秒。（**可选**）
+
 ***-setConnTimeout（）：***设置连接超时时间（默认5s），参数为整型，单位：毫秒。（**可选**）
 
 ###3.2 post请求
@@ -103,12 +108,19 @@ compile 'com.google.code.gson:gson:2.2.4'
 ```
 
 方法及参数说明：
+
 ***-url（）：***设置请求的接口地址，参数类型为String。(**必填**)
+
 ***-setJavaBean（）：***设置解析之后的JavaBean对象，记得加.class。（**必填**）
+
 ***-addParam():***设置post请求的参数,参数为hashmap类型。（**必填**）
+
 ***-onExecuteByPost（）：***设置开始请求（post）接口，请求结果在回调方法中，参数为CommCallback，可加泛型。（**必填**）
+
 ***-setReadTimeout（）：***设置读取超时时间（默认30s），参数为整型，单位：毫秒。（**可选**）
+
 ***-setConnTimeout（）：***设置连接超时时间（默认5s），参数为整型，单位：毫秒。（**可选**）
+
 
 >通过上面的两个例子是不是觉得这个框架很好用，只需要传url，javabean就可以在回调方法里面得到想要的结果，你会发现你的代码里面没有了子线程、没有了handle，链式编程使得代码结构更加清晰。如果对Rxjava，Retrofit，OkHttp熟悉的朋友肯定觉得这种方式似曾相识，的确这种链式+回调有很多的好处。
 
