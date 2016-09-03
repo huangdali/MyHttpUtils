@@ -17,6 +17,7 @@
 ###1.2 使用场景
 大部分的网络请求都是返回json格式的数据，秉承java中一切皆对象的原则，这个json格式的数据必定对应一个JavaBean。你只要能通过json格式构造出相应的javabean对象（文章的最后会介绍如何快速构造JavaBean对象），那么用几行代码就可以帮你解析出来。（如果你的项目中不能使用Retrofit，OkHttp那么你是找对地方了）。所以，只要请求接口返回的数据格式是json的都可以用。
 >备注：目前还不支持文件上传和下载，后续将跟进，敬请关注
+
 ##二、怎么用
 **方法一**：gradle导入（**推荐**）
 ```
@@ -134,12 +135,14 @@ settings-->Plugins—>输入GsonFormat—>Browse—>Install—>重启as即可
 3）、这样你就可以得到框架中setJavaBean（）中的JavaBean了。你只需要传url，javabean就可以在回调方法里面得到想要的结果，是不是很简单？。
 > 有人可能会说这是简单的一个javabean对象，复杂的json怎么搞？带json数组的又咋搞。
 
+
 那我可以负责的告诉你，方法一样的。只要你的json格式正确就能生成对应的javabean对象。来看一个复杂的json。（豆瓣Top250的电影，属性几十个呢）
 下面是请求豆瓣排名第一的电影（只是一条哦）：https://api.douban.com/v2/movie/top250?start=0&count=1
 ![这里写图片描述](http://img.blog.csdn.net/20160902160231465)
 是不是很长很长，用gsonformat管理多长照样搞定。***复制json—>粘贴—>确定—>实现Serializable接口***，四步搞定。 
 ![这里写图片描述](http://img.blog.csdn.net/20160902160409972)
 >***温馨提示：***里面的属性名千万不要改哦，必须要跟json数据生成的保持一致。要获取list数据，通过类似于new javabean().getData()的方法就可以得到了。
+
 ##五、封装思路
 使用讲完了，来讲讲怎么封装的吧（感兴趣的可以下载源码，共同学习）。封装过程其实很简单，用到了三个东西线程、handler、httpurlconnection，回调思想。
 ###5.1 回调思想
