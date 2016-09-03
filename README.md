@@ -115,6 +115,7 @@ compile 'com.google.code.gson:gson:2.2.4'
 
 ##四、如何快速通过json构建javabean对象
 >推荐一个非常好用的AS插件***GsonFormat***。（当然，你也可以通过http://www.jsonschema2pojo.org/直接生成javabean对象，不是很喜欢，因为没有GsonFormat好用）
+
 ###4.1 什么是GsonFormt
 就是直接将json数据格式转换为javabean对象的as插件。
 ###4.2 安装步骤
