@@ -201,5 +201,5 @@ public interface CommCallback<T> {
 这简直就是标准的HttpurlConnection请求方式嘛。我就不一一说了。post请求类似。
 ###5.3 封装的经过
 来说说为啥要使用HttpUrlConnection来封装。***一方面***，它是官方推荐的网络请求方式，但是请求过程代码太累赘（看看上面的代码就知道了），于是就像封装一下，用几行代码就搞定，提高工作效率；***还有一个原因***就是在我维护的一个项目中，之前的那个人用的是OKHttp2.X开发的，在新增功能的时候不想用okhttp2.X了，听过有bug。但是升级到okhttp3.X的话要改的又太多。于是我就想到了Retrofit，但是其实Retrofit底层也是用okhttp实现的，虽然导入retrofit依赖的时候不会报错，但是运行的时候就错了（估计是包冲突了），于是我又想到了以前用过的vollery和xUtils，额，还是算了，它们封装的东西太多了，我就简简单单的发个网络请求而已。怎么办呢，就只用httpurlconnection了，直接用这个呢要写的代码真的是太冗余了，于是就有了这个封装的网络请求框架了，基本上可以满足大部分的网络请求了，目前还不支持文件上传、下载，后续会跟进，敬请关注。
-##六、下载地址
-源码及demo下载地址：https://github.com/huangdali/MyHttpUtils
+##六、博客地址
+http://blog.csdn.net/qq137722697/article/details/52414372
