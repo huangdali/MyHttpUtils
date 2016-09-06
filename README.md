@@ -21,7 +21,7 @@
 ##二、怎么用
 **方法一**：gradle导入（**推荐**）
 ```
-compile 'com.hdl:myhttputils:1.0'
+compile 'com.huangdali:myhttputils1.0:1.3.1'
 ```
 
 **方法二**：导入arr包（上面方法失败的话就用这个吧）
