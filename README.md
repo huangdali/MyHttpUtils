@@ -27,7 +27,7 @@ compile 'com.huangdali:myhttputils1.0:1.3.2'
 **方法二**：导入arr包（上面方法失败的话就用这个吧）
 进入项目的github主页，下载该项目，arr文件就在.\MyHttpUtils\myhttputils1.0\build\outputs\aar文件夹下面（[点击这里进入github](https://github.com/huangdali/MyHttpUtils)）。你要是嫌麻烦的话[点击这里直接下载arr文件](https://dl.bintray.com/huangdali/myhttputils/com/huangdali/myhttputils1.0/1.3.2/myhttputils1.0-1.3.2.aar)。更多使用方法请看[jcenter.bintray主页](https://bintray.com/huangdali/myhttputils/myhttputils)
 
->注意：由于使用到了由于框架中使用到了gson，所以也不需要加入gson的依赖。(如果你的项目中已经有了Gson的依赖请删除)
+>注意：由于框架中使用到了gson，所以也不需要加入gson的依赖。(如果你的项目中已经有了Gson的依赖请删除)
 
 
 ##三、应用举例
