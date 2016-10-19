@@ -1,9 +1,15 @@
 package com.hdl.myhttputilsdemo.bean;
 
 /**
+ * Created by HDL on 2016/10/18.
+ */
+
+import java.io.Serializable;
+
+/**
  * Created by HDL on 2016/9/1.
  */
-public class RemarkBean {
+public class RemarkBean implements Serializable{
 
     /**
      * comments : 算了的高考

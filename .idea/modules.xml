@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyHttpUtils.iml" filepath="$PROJECT_DIR$/MyHttpUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyHttptUtilsDemo.iml" filepath="$PROJECT_DIR$/MyHttptUtilsDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myhttputils1.0/myhttputils1.0.iml" filepath="$PROJECT_DIR$/myhttputils1.0/myhttputils1.0.iml" />
     </modules>
   </component>
 </project>

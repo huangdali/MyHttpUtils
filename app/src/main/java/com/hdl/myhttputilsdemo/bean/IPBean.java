@@ -1,9 +1,11 @@
 package com.hdl.myhttputilsdemo.bean;
 
+import java.io.Serializable;
+
 /**
  * Created by HDL on 2016/8/31.
  */
-public class IPBean {
+public class IPBean implements Serializable {
 
     /**
      * code : 0
