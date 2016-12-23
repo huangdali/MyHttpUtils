@@ -1,4 +1,4 @@
-package com.hdl.myhttputilsdemo;
+package com.hdl.myhttputilssimple;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.hdl.myhttputilsdemo", appContext.getPackageName());
+        assertEquals("com.hdl.myhttputilssimple", appContext.getPackageName());
     }
 }

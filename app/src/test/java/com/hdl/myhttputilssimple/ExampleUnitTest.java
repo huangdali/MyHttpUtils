@@ -1,4 +1,4 @@
-package com.hdl.myhttputilsdemo;
+package com.hdl.myhttputilssimple;
 
 import org.junit.Test;
 

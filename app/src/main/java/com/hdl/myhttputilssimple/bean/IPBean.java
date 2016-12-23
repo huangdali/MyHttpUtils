@@ -1,33 +1,12 @@
-package com.hdl.myhttputilsdemo.bean;
-
-import java.io.Serializable;
+package com.hdl.myhttputilssimple.bean;
 
 /**
  * Created by HDL on 2016/8/31.
  */
-public class IPBean implements Serializable {
+public class IPBean {
 
-    /**
-     * code : 0
-     * data : {"country":"中国","country_id":"CN","area":"华南","area_id":"800000","region":"广东省","region_id":"440000","city":"广州市","city_id":"440100","county":"","county_id":"-1","isp":"腾讯网络","isp_id":"1000153","ip":"182.254.34.74"}
-     */
 
     private int code;
-    /**
-     * country : 中国
-     * country_id : CN
-     * area : 华南
-     * area_id : 800000
-     * region : 广东省
-     * region_id : 440000
-     * city : 广州市
-     * city_id : 440100
-     * county :
-     * county_id : -1
-     * isp : 腾讯网络
-     * isp_id : 1000153
-     * ip : 182.254.34.74
-     */
 
     private DataBean data;
 
