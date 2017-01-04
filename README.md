@@ -1,4 +1,4 @@
-##[倾力之作]android轻量级网络请求框架MyHttputils2.1.6
+##[倾力之作]android轻量级网络请求框架MyHttputils
 
 >尊重原创，转载请注明出处: http://blog.csdn.net/qq137722697
 
@@ -44,7 +44,7 @@
 **使用gradle添加依赖（添加完之后Sync一下）：**
 
 ```
- compile 'com.huangdali:myhttputils:2.1.6'
+ compile 'com.huangdali:myhttputils:2.1.5'
 ```
 
 **当然了网络权限可别忘加哦**
