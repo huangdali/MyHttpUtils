@@ -1,13 +1,13 @@
-##[倾力之作]android轻量级网络请求框架MyHttputils
+## [倾力之作]android轻量级网络请求框架MyHttputils
 
->尊重原创，转载请注明出处: http://blog.csdn.net/qq137722697
+> 尊重原创，转载请注明出处: http://blog.csdn.net/qq137722697
 
-###**一、前言**
+### **一、前言**
 
->本版代码大换血，使用了策略模式和构造模式来组织代码，增加了更加人性化的请求构造，代码质量提高、效率显著提升。（但是使用风格基本没变哦）
+> 本版代码大换血，使用了策略模式和构造模式来组织代码，增加了更加人性化的请求构造，代码质量提高、效率显著提升。（但是使用风格基本没变哦）
 
 2.0.2版本的基本的用法在[《android网络请求框架》一个轻量级的异步网络请求框架MyHttpUtils（新版更新记录，版本号：2.X）](http://blog.csdn.net/qq137722697/article/details/52843336)中有过详细的介绍。下面是对2.1.5版的详细使用介绍，对源码感兴趣的伙伴可以移步[github](https://github.com/huangdali/myhttputils)了解更多的消息。
-##**二、功能介绍**
+## **二、功能介绍**
 
  - **1、支持get、post请求；**
 
@@ -37,9 +37,9 @@
 
  - **14、提供错误信息处理类；**
 
->MyHttpUtils满足了大部分的网络请求了，而且非常轻量级哦（大小：20.76k）
+> MyHttpUtils满足了大部分的网络请求了，而且非常轻量级哦（大小：20.76k）
 
-##**三、快速使用**
+## **三、快速使用**
 
 **使用gradle添加依赖（添加完之后Sync一下）：**
 
@@ -139,7 +139,7 @@ MyHttpUtils.build()//构建myhttputils
 参数多的情况怎么搞？加很多addParam()？继续往下看
 
 
-###**4.2、get请求案例之Ip地址查询**
+### **4.2、get请求案例之Ip地址查询**
 
 **接口：**http://ip.taobao.com/service/getIpInfo.php
 
@@ -258,7 +258,7 @@ private void showResult(IPBean ipBean) {
 onComplete会在请求结束的时候回调，这样你可以在接收之后做出相应的友好提示，比如这里的关闭进度条；
 
 
-###**4.3、Post请求之登录教程**
+### **4.3、Post请求之登录教程**
 
 **接口：**http://192.168.2.153:8080/MyHttpUtilsServer/userlogin
 
@@ -310,7 +310,7 @@ public void onLogin(View view) {
 
 多个参数的情况加建议使用map对象构造然后addPatams即可。
 
-###**4.4 文件下载**
+### **4.4 文件下载**
 **接口：**http://192.168.2.153:8080/MyHttpUtilsServer/g3box_uesr_2.3.1.apk
 
 **参数：**无
@@ -362,7 +362,7 @@ public void onLogin(View view) {
 
 
  
-###**4.5、文件上传**
+### **4.5、文件上传**
 **接口：** http://192.168.2.153:8080/MyHttpUtilsServer/upload
 
 **参数：** 无
@@ -415,7 +415,7 @@ public void onUpload(View view) {
  
 >**温馨提示：**添加文件可以通过addFile(文件的绝对路径)和addFile(new File（文件绝对路径）)，还有就是这里使用uploadUrl而不是url来设置请求接口哦
 
-####**4.5.2、多文件上传**
+#### **4.5.2、多文件上传**
   
   多文件上传有两种方式，即**addFile多次**和**addFiles一个集合**，addFile就不演示了，下面演示addFiles
 
@@ -455,7 +455,7 @@ public void onUploadMult(View view) {
 }
 ```
 
-###**4.6、参数与文件同时上传**
+### **4.6、参数与文件同时上传**
 **接口：**http://192.168.2.153:8080/MyHttpUtilsServer/string.action   和 
                 http://192.168.2.153:8080/MyHttpUtilsServer/upload
                 
@@ -515,9 +515,9 @@ public void onUploadMult(View view) {
 ----------
 
 
-##**五、使用小技巧**
+## **五、使用小技巧**
 
-###**5.1、日志打印 **
+### **5.1、日志打印 **
 
 为了方便调试，myhttputils还会在logcat中打印i级别的json字符串日志，如日志太多可添加HttpRequester为过滤条件，看图（是不是很容易就看出来了）：
 
@@ -532,13 +532,13 @@ public void onUploadMult(View view) {
 
 
 
-###**5.2、错误信息对照表**
+### **5.2、错误信息对照表**
 如果你不想使用myhttputils提供的FailedMsgUtils.getErrMsgStr（）方法，你可以自己根据返回的throwable进行处理，下面是myhttputils可能会截获的异常对照表：
 
 ![这里写图片描述](http://img.blog.csdn.net/20161223230456649?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXExMzc3MjI2OTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
  
-###**5.3、关于请求参数的配置**
+### **5.3、关于请求参数的配置**
 如果你觉得在一条链上set方法太多不太好，myhttputils还提供了HttpBody方法，先构造完了，通过setHttpBody即可。（这种方式需要你自己判断文件是否存在哦）
 
 下面以上面下载的案例来调整：
@@ -575,7 +575,7 @@ public void onUploadMult(View view) {
     }
 ```
 
-##最后
+## 最后
 
 如反馈良好，可以考虑详解源码，留言告诉我吧
 
