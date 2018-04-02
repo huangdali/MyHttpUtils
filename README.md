@@ -1,4 +1,4 @@
-## [倾力之作]android轻量级网络请求框架MyHttputils [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/huangdali/myhttputils/myhttputils/images/download.svg) ](https://bintray.com/huangdali/myhttputils/myhttputils/_latestVersion)
+## [倾力之作]android轻量级网络请求框架MyHttputils [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Download](https://api.bintray.com/packages/huangdali/myhttputils/myhttputils1.0/images/download.svg) ](https://bintray.com/huangdali/myhttputils/myhttputils1.0/_latestVersion)
 
 > 尊重原创，转载请注明出处: http://blog.csdn.net/qq137722697
 
